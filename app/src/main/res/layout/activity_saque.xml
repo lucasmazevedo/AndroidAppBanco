@@ -7,8 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.cajuinaweb.androidappbanco.MainActivity">
-
+    tools:context="br.com.cajuinaweb.androidappbanco.SaqueActivity">
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,13 +64,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/blockSaldo"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:padding="10dp"
         android:background="@color/colorGray"
         android:id="@+id/blockOperacoes">
 
         <TextView
-            android:text="Operações Disponíveis"
+            android:text="Efetuar Saque"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -79,65 +78,23 @@
             android:textStyle="bold"/>
     </FrameLayout>
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_below="@+id/blockOperacoes"
-    android:layout_marginTop="5dp"
-    android:layout_centerHorizontal="true"
-    android:gravity="center_horizontal"
-    android:id="@+id/linearLayout">
 
-    <Button
-        android:id="@+id/btnDeposito"
-        android:layout_marginRight="2dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Efetuar Depósito"
-        android:drawableTop="@drawable/ic_deposity"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorWhite"
-        android:drawableTint="@color/colorWhite"
-        />
-
-    <Button
-        android:id="@+id/btnSaque"
-        android:layout_marginLeft="2dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Efetuar Saque"
-        android:background="@color/colorPrimaryDark"
-        android:textColor="@color/colorWhite"
-        android:drawableTop="@drawable/ic_saque"
-        android:drawableTint="@color/colorWhite"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-/>
-
-</LinearLayout>
-
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sair da Conta"
-        android:layout_above="@+id/lbInfo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
-
-    <TextView
-        android:id="@+id/lbInfo"
+    <EditText
+        android:layout_marginTop="30dp"
+        android:hint="Digite o valor que deseja sacar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="Interaje 2016 - Lucas Azevedo - Curso Android"
-        android:textAlignment="center"/>
+        android:id="@+id/valorSaque"
+        android:layout_below="@id/blockOperacoes"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/valorSaque"
+        android:id="@+id/efetuarSaque"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Saque"/>
+
+
 
 </RelativeLayout>
