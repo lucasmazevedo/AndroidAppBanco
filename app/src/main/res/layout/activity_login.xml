@@ -30,7 +30,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="numberPassword"
         android:ems="8"
         android:id="@+id/passwordConta"
         android:layout_below="@id/numConta"
