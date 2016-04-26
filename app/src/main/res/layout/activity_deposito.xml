@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.cajuinaweb.androidappbanco.DepositoActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_logo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem Vindo ao Banco Novo"
+        android:id="@+id/lbWelcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbWelcome"
+        android:text="Número da Conta: 09209301"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        android:id="@+id/lbnumConta" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbnumConta"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/blockSaldo">
+
+        <TextView
+            android:id="@+id/lbSaldo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saldo em Conta:"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/lbSaldoValue"
+            android:text="R$ 162.200,00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blockSaldo"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:background="@color/colorGray"
+        android:id="@+id/blockOperacoes">
+
+        <TextView
+            android:text="Efetuar Depósito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:hint="Digite o valor que deseja depositar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valorDeposito"
+        android:layout_below="@id/blockOperacoes"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/valorDeposito"
+        android:id="@+id/efetuarDeposito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Depósito"/>
+
+
+
+</RelativeLayout>
