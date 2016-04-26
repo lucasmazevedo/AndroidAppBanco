@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bem Vindo ao Banco Novo"
+        android:text="@string/lbWelcome"
         android:id="@+id/lbWelcome"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -28,7 +28,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lbWelcome"
-        android:text="Número da Conta: 09209301"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:textSize="12sp"
@@ -47,12 +46,11 @@
             android:id="@+id/lbSaldo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saldo em Conta:"
+            android:text="@string/lbSaldoConta"
             android:textColor="@color/colorWhite"/>
 
         <TextView
             android:id="@+id/lbSaldoValue"
-            android:text="R$ 162.200,00"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -71,7 +69,7 @@
         android:id="@+id/blockOperacoes">
 
         <TextView
-            android:text="Operações Disponíveis"
+            android:text="@string/titOpDisponiveis"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -94,7 +92,7 @@
         android:layout_marginRight="2dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Efetuar Depósito"
+        android:text="@string/btEfetuarDep"
         android:drawableTop="@drawable/ic_deposity"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
@@ -110,7 +108,7 @@
         android:layout_marginLeft="2dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Efetuar Saque"
+        android:text="@string/btEfetuarSaque"
         android:background="@color/colorPrimaryDark"
         android:textColor="@color/colorWhite"
         android:drawableTop="@drawable/ic_saque"
@@ -127,7 +125,7 @@
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sair da Conta"
+        android:text="@string/btLogout"
         android:layout_above="@+id/lbInfo"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp" />
@@ -137,7 +135,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Interaje 2016 - Lucas Azevedo - Curso Android"
+        android:text="@string/txtCopyright"
         android:textAlignment="center"/>
 
 </RelativeLayout>

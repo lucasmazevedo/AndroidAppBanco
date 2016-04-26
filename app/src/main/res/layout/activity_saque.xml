@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.cajuinaweb.androidappbanco.SaqueActivity">
     <ImageView
+        android:contentDescription="@string/lbMeuBanco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_logo"
@@ -17,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bem Vindo ao Banco Novo"
+        android:text="@string/lbWelcome"
         android:id="@+id/lbWelcome"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -27,7 +28,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lbWelcome"
-        android:text="Número da Conta: 09209301"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:textSize="12sp"
@@ -46,12 +46,11 @@
             android:id="@+id/lbSaldo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saldo em Conta:"
+            android:text="@string/lbSaldoConta"
             android:textColor="@color/colorWhite"/>
 
         <TextView
             android:id="@+id/lbSaldoValue"
-            android:text="R$ 162.200,00"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -70,7 +69,7 @@
         android:id="@+id/blockOperacoes">
 
         <TextView
-            android:text="Efetuar Saque"
+            android:text="@string/btEfetuarSaque"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -81,7 +80,7 @@
 
     <EditText
         android:layout_marginTop="30dp"
-        android:hint="Digite o valor que deseja sacar"
+        android:hint="@string/hintValorSaque"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/valorSaque"
@@ -93,8 +92,6 @@
         android:id="@+id/efetuarSaque"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirmar Saque"/>
-
-
+        android:text="@string/btConfirmaSaque"/>
 
 </RelativeLayout>

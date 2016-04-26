@@ -10,6 +10,7 @@
     tools:context="br.com.cajuinaweb.androidappbanco.LoginActivity">
 
     <ImageView
+        android:contentDescription="@string/lbMeuBanco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@mipmap/imgmeubanco"
@@ -24,7 +25,7 @@
         android:id="@+id/numConta"
         android:layout_below="@+id/imageView"
         android:layout_marginTop="30dp"
-        android:hint="Digite o Numero da conta"
+        android:hint="@string/hintNumConta"
         />
 
     <EditText
@@ -35,13 +36,13 @@
         android:id="@+id/passwordConta"
         android:layout_below="@id/numConta"
         android:layout_marginTop="30dp"
-        android:hint="Digite senha da sua conta"/>
+        android:hint="@string/hintPassConta"/>
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Acessar Conta"
+        android:text="@string/btAcessarConta"
         android:layout_below="@id/passwordConta"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"/>
@@ -49,6 +50,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Interaje 2016 - Lucas Azevedo - Curso Android"
+        android:text="@string/txtCopyright"
         android:textAlignment="center"/>
 </RelativeLayout>

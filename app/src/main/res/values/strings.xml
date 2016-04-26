@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">AndroidAppBanco</string>
+    <string name="lbActivityDeposito">Depósitos</string>
+    <string name="lbActivitySaques">Saques</string>
+    <string name="lbWelcome">Bem Vindo ao Banco Novo</string>
+    <string name="lbSaldoConta">Saldo em Conta:</string>
+    <string name="btEfetuarDep">Efetuar Depósito</string>
+    <string name="hintDeposito">Digite o valor que deseja depositar</string>
+    <string name="btConfirmarDeposito">Confirmar Depósito</string>
+    <string name="txtCopyright">Interaje 2016 - Lucas Azevedo - Curso Android</string>
+    <string name="btAcessarConta">Acessar Conta</string>
+    <string name="hintPassConta">Digite senha da sua conta</string>
+    <string name="hintNumConta">Digite o Numero da conta</string>
+    <string name="lbMeuBanco">Meu Banco</string>
+    <string name="titOpDisponiveis">Operações Disponíveis</string>
+    <string name="btEfetuarSaque">Efetuar Saque</string>
+    <string name="btLogout">Sair da Conta</string>
+    <string name="hintValorSaque">Digite o valor que deseja sacar</string>
+    <string name="btConfirmaSaque">Confirmar Saque</string>
 </resources>

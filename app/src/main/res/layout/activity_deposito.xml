@@ -19,7 +19,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bem Vindo ao Banco Novo"
+        android:text="@string/lbWelcome"
         android:id="@+id/lbWelcome"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -29,7 +29,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lbWelcome"
-        android:text="Número da Conta: 09209301"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5dp"
         android:textSize="12sp"
@@ -48,12 +47,11 @@
             android:id="@+id/lbSaldo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Saldo em Conta:"
+            android:text="@string/lbSaldoConta"
             android:textColor="@color/colorWhite"/>
 
         <TextView
             android:id="@+id/lbSaldoValue"
-            android:text="R$ 162.200,00"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
@@ -72,7 +70,7 @@
         android:id="@+id/blockOperacoes">
 
         <TextView
-            android:text="Efetuar Depósito"
+            android:text="@string/btEfetuarDep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -83,7 +81,7 @@
 
     <EditText
         android:layout_marginTop="30dp"
-        android:hint="Digite o valor que deseja depositar"
+        android:hint="@string/hintDeposito"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/valorDeposito"
@@ -95,7 +93,7 @@
         android:id="@+id/efetuarDeposito"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirmar Depósito"/>
+        android:text="@string/btConfirmarDeposito"/>
 
 
 

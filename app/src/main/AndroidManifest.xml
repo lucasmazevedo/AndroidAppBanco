@@ -20,8 +20,8 @@
     de            <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DepositoActivity" android:label="Depósitos" android:parentActivityName=".MainActivity" />
-        <activity android:name=".SaqueActivity" android:label="Saques" android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".DepositoActivity" android:label="@string/lbActivityDeposito" android:parentActivityName=".MainActivity" />
+        <activity android:name=".SaqueActivity" android:label="@string/lbActivitySaques" android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
